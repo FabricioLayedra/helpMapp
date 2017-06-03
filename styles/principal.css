@@ -1,0 +1,22 @@
+#cabecera img {
+	width: 15%;
+}
+
+#cabecera {
+	background-color: #212a85;
+	display: inline-flex;
+	width: 100%; 
+}
+
+nav ul{
+	display: inline-flex;
+	list-style: none;
+}
+
+a:link{
+	color: #ece242;
+}
+
+a:visited{
+	color: #ece242;
+}
