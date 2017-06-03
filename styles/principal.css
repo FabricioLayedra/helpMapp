@@ -1,3 +1,4 @@
+
 #cabecera img {
 	width: 19%;
 	height: 10%;
@@ -8,6 +9,13 @@
 	display: inline-flex;
 	width: 100%; 
 }
+
+html, body {
+        height: 100%;
+		margin:0;
+		padding: 0;
+		background-color: #D5DBF0;
+      }
 
 nav ul{
 	display: inline-flex;
@@ -24,7 +32,6 @@ a:visited{
 
 a:hover{
 	color: white;
-	font-size: 20px;
 }
 
 #cabecera nav{
@@ -57,7 +64,24 @@ form[name="buscar"] label{
 }
 
 #cabecera nav ul li:hover{
-	background-color: #6A74B2;
-	border-radius: 4pt;
+	border-radius: 1pt;
+	color: white;
+}
+
+
+/**ESTO ES PARA DONACIONES**/
+#map {
+        height: 400px;
+        width: 500px;
+      }
+
+.element{
+	display: inline-flex;
+
+}
+
+form[name="consultas"] > *{
+	display: block;
+
 }
 

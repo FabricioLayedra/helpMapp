@@ -4,20 +4,6 @@
 	<meta charset="UTF-8">
 	<title>helpMapp - Donaciones</title>
 	<link rel="stylesheet" href="../styles/principal.css">
-
-	<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-	</style>
 </head>
 <body>
 	<header>
@@ -25,40 +11,43 @@
 			<img src="../img/helpMapp.jpg">
 			<nav>
 				<ul>
-					<li><a href="#"> Inicio </a></li>&nbsp;
-					<li><a href="#"> Donar </a>&nbsp;</li>
-					<li><a href="#"> Estadisticas</a> &nbsp;</li>
-					<li><a href="#"> Voluntario</a> &nbsp;</li>
-					<li><a href="#"> Tutoriales </a>&nbsp;</li>
-					<li><a href="#"> Sobre Nosotros</a> &nbsp;</li>
+					<li><a href="#"> Inicio </a></li>
+					<li><a href="donar.html"> Donar</a></li>
+					<li><a href="#"> Estadísticas</a> </li>
+					<li><a href="#"> Voluntario</a> </li>
+					<li><a href="#"> Tutoriales </a></li>
+					<li><a href="#"> Sobre Nosotros</a> </li>
 				</ul>
 			</nav>
 			<form name="buscar" method="GET">
+				<label>Buscar</label>
 				<input type="search" name="busqueda">
 			</form>
 		</div>
 	</header>
-	<section>  
-		<div class="element">
-			<form name="consultas" method="GET">
-				<label>
-					Provincia:
-				</label>
-				<input type="search" name="Provincia">
-				<label>
-					Ciudad:
-				</label>
-				<input type="search" name="Ciudad">
-				<input type="submit" name="Buscar">
-			</form>
-		</div>
+	<aside class="element">
+		
+		<form name="consultas" method="GET">
+			<label> Ingresa los datos para tu búsqueda: </label>
+			<label>
+				Provincia:
+			</label>
+			<input type="search" name="Provincia">
+			<label>
+				Ciudad:
+			</label>
+			<input type="search" name="Ciudad">
+			<input type="submit" name="Buscar">
+		</form>
+	</aside>
+	<section class="element">  
 		<div id="map">
 			<script>
 				var map;
 			    function initMap() {
 			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: {lat: -34.397, lng: 150.644},
-			          zoom: 6
+			          center: {lat: -2.158596, lng: -79.888239},
+			          zoom: 16
 			        });
 			        var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -69,10 +58,14 @@
 			              lat: position.coords.latitude,
 			              lng: position.coords.longitude
 			            };
+			            var zm = {
+			              zoom: 20
+			            };
 
 			            infoWindow.setPosition(pos);
-			            infoWindow.setContent('Location found.');
+			            infoWindow.setContent('UPC');
 			            map.setCenter(pos);
+			            map.setZoom(zm)
 			          }, function() {
 			            handleLocationError(true, infoWindow, map.getCenter());
 			          });
@@ -89,9 +82,14 @@
 		                              'Error: Your browser doesn\'t support geolocation.');
 		      	}
 			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqGpBJlikYP-PHuXm8aLke_RIjCUIpTRU&callback=initMap"
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKUreK6wFQ5A4NFLa15dZSEH85f5XytWo&callback=initMap"
 			    async defer></script>
 		</div>
 	</section>
+	<footer>
+		<div id="footer">
+			<address>Todos los derechos reservados, TAWS.2017</address>
+		</div>
+	</footer>
 </body>
 </html>
