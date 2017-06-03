@@ -45,3 +45,14 @@ form[name="buscar"]{
 form[name="buscar"] label{
 	color: #ece242;
 }
+
+#footer {
+	background-color: #212a85;
+	width: 100%; 
+}
+
+#footer address{
+	color: #ece242; 
+}
+
+
