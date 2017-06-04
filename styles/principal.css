@@ -101,3 +101,17 @@ form[name="consultas"] > *{
 .labels{
 	width: 100%;
 }
+
+/**TUTORIALES**/
+
+section.videos{
+	display: inline-flex;
+	padding: 10px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+section.videos iframe{
+	margin: 10px;
+}
+
