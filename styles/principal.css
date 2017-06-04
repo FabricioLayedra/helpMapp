@@ -1,6 +1,7 @@
 
 * {
 	font-family: 'Cairo', sans-serif;
+	font-size: 1.02em;
 }
 
 #cabecera img {
@@ -90,3 +91,13 @@ form[name="consultas"] > *{
 }
 
 
+/** FORMULARIO**/
+
+#formulario form{
+	margin-left: 40%;
+	margin-right: auto;
+}
+
+.labels{
+	width: 100%;
+}
