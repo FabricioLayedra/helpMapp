@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiero ser Voluntario</title>
+	<link rel="stylesheet" href="../styles/principal.css">
+</head>
+<body>
+	<header>
+		<div id="cabecera">
+			<img src="../img/helpMapp.jpg">
+			<nav>
+				<ul>
+					<li><a href="#"> Inicio </a></li>
+					<li><a href="donar.html"> Donar</a></li>
+					<li><a href="#"> Estadísticas</a> </li>
+					<li><a href="#"> Voluntario</a> </li>
+					<li><a href="#"> Tutoriales </a></li>
+					<li><a href="#"> Sobre Nosotros</a> </li>
+				</ul>
+			</nav>
+			<form name="buscar" method="GET">
+				<label>Buscar</label>
+				<input type="search" name="busqueda">
+			</form>
+		</div>
+	</header>
+	<section>
+		<div id="formulario">
+			<form  name="pedidos" id="pedido" method="get" autocomplete="			off">
+   				<label for="nombre">Nombres:</label>
+   				<input type="text" id="nombre" autocomplete="off" /><br><br>
+   				<label for="apellido">Apellidos:</label>
+   				<input type="text" id="apellido" autocomplete="off" /><br><br>
+				<label >Sexo:</label>
+   				<input type="radio" name="sexo" id="masculino" value="Masculino">
+				<label for="varon">Masculino </label>
+				<input type="radio" name="sexo" id="mujer" value="Mujer">
+				<label for="mujer">Femenino </label><br><br>
+   				<label for="edad">Edad:</label>
+   				<input type="text" id="edad" autocomplete="off" /><br><br>
+   				<label for="cedula">Cedula:</label>
+   				<input type="text" id="cedula" autocomplete="off" /><br><br>
+   				<label for="sangre">Tipo de Sangre:</label>
+   				<input  id="sangre"  list="tipoSangre" name="tipos" />
+   				<datalist id="tipoSangre">
+   					<option value="O+">
+   					<option value="O-">
+   					<option value="A+">
+   					<option value="A-">
+   					<option value="AB+">
+   					<option value="AB+">
+   					<option value="B+">
+   					<option value="B-">
+   				</datalist><br><br>
+   				<label for="telfono">Telefono:</label>
+   				<input type="text" id="telfono" autocomplete="off" /><br><br>
+   				<label for="correo">Correo:</label>
+   				<input type="email" id="correo" autocomplete="off" /><br><br>
+   				<label >Conocimiento de Primeros Auxilios:</label>
+   				<input type="radio" name="experiencia" id="si" value="Si">
+				<label for="si">Si </label>
+				<input type="radio" name="experiencia" id="no" value="No">
+				<label for="no">No </label><br><br>
+				<input type="submit" id="enviar" />
+  			</form>
+  		</div>
+	</section>
+	<footer>
+		<div id="footer">
+			<address>Todos los derechos reservados, TAWS.2017</address>
+		</div>
+	</footer>
+</body>
+</html>
