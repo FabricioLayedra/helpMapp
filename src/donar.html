@@ -27,22 +27,26 @@
 			</form>
 		</div>
 	</header>
-	<aside class="element">
-		
-		<form name="consultas" method="GET">
-			<label> Ingresa los datos para tu búsqueda: </label>
-			<label>
-				Provincia:
-			</label>
-			<input type="search" name="Provincia">
-			<label>
-				Ciudad:
-			</label>
-			<input type="search" name="Ciudad">
-			<input type="submit" name="Buscar">
-		</form>
-	</aside>
-	<section class="element">  
+	<div class="container">
+		<div class="row-fluid">
+
+	      	<div class="span4">
+				<form name="consultas" method="GET">
+					<label> Ingresa los datos para tu búsqueda: </label>
+					<label>
+						Provincia:
+					</label>
+					<input type="search" name="Provincia">
+					<label>
+						Ciudad:
+					</label>
+					<input type="search" name="Ciudad">
+					<input type="submit" name="Buscar">
+				</form>
+	    	</div>
+
+	        <div class="span8">
+	        		<section class="element">  
 		<div id="map">
 			<script>
 				var map;
@@ -88,6 +92,15 @@
 			    async defer></script>
 		</div>
 	</section>
+	    	</div>
+	    	
+	    </div>
+	</div>
+	<aside class="element">
+		
+
+	</aside>
+
 	<footer>
 		<div id="footer">
 			<address>Todos los derechos reservados, TAWS.2017</address>
