@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>helpMapp</title>
 	<link rel="stylesheet" href="../styles/principal.css">
-	<link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> 
 </head>
 <body>
@@ -28,15 +28,59 @@
 		</div>
 	</header>
 	<section>
-		<p>PHOTOBOX</p>
-	</section>
-	<section>
-		<p>helpMapp, plataforma de gestión de ayuda ante desastres naturales.</p>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="../img/helpMapp.jpg" alt="Chania">
+		      <div class="carousel-caption">
+		        <h3>Los Angeles</h3>
+		        <p>LA is always so much fun!</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="../img/helpMapp.jpg" alt="Chicago">
+		      <div class="carousel-caption">
+		        <h3>Chicago</h3>
+		        <p>Thank you, Chicago!</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="../img/helpMapp.jpg" alt="New York">
+		      <div class="carousel-caption">
+		        <h3>New York</h3>
+		        <p>We love the Big Apple!</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 	</section>
 	<footer>
 		<div id="footer">
 			<address>Todos los derechos reservados, TAWS.2017</address>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 </body>
 </html>
