@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Quiero ser Voluntario</title>
-	<link rel="stylesheet" href="../styles/principal.css">
-	<link href="../dist/css/bootstrap.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> 
-</head>
-<body>
-	<header>
-		<div id="cabecera">
-			<img src="../img/helpMapp.jpg">
-			<nav>
-				<ul>
-					<li><a href="index.html"> Inicio </a></li>
-					<li><a href="donar.html"> Donar</a></li>
-					<li><a href="statistics.html"> Estadísticas</a> </li>
-					<li><a href="voluntario.html"> Voluntario</a> </li>
-					<li><a href="tutoriales.html"> Tutoriales </a></li>
-					<li><a href="aboutus.html"> Sobre Nosotros</a> </li>
-				</ul>
-			</nav>
-			<form name="buscar" method="GET">
-				<label>Buscar</label>
-				<input type="search" name="busqueda">
+	<head>
+		<meta charset="UTF-8">
+		<title>Quiero ser Voluntario</title>
+		<link rel="stylesheet" href="../styles/principal.css">
+		<link href="../dist/css/bootstrap.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div id="cabecera">
+				<img src="../img/helpMapp.jpg">
+				<nav>
+					<ul>
+						<li><a href="index.html"> Inicio </a></li>
+						<li><a href="donar.html"> Donar</a></li>
+						<li><a href="statistics.html"> Estadísticas</a> </li>
+						<li><a href="voluntario.html"> Voluntario</a> </li>
+						<li><a href="tutoriales.html"> Tutoriales </a></li>
+						<li><a href="aboutus.html"> Sobre Nosotros</a> </li>
+					</ul>
+				</nav>
+				<form name="buscar" method="GET">
+					<label>Buscar</label>
+					<input type="search" name="busqueda">
+				</form>
+			</div>
+		</header>
+		<section>
+			<form id = "quiero-ser-voluntario" >
+				<div class="form-group">
+					<label for="nombre" class="labels">Nombres:</label>
+					<input type="text" id="nombre" autocomplete="off" />
+				</div>
+				<div class="form-group">
+					<label for="apellido" class="labels">Apellidos:</label>
+					<input type="text" id="apellido" autocomplete="off" />
+				</div>
+				<div>
+					<label  class="labels">Sexo:</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Masculino</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Femenino</label>
+				</div>
+				<div class="form-group">
+					<label for="cedula" class="labels">Cedula:</label>
+					<input type="text" id="cedula" autocomplete="off" />
+				</div>
+				<div class="form-group">
+					<label for="sel1">Tipo de Sangre:</label>
+					<select class="form-contro" id="sel1">
+						<option>A+</option>
+						<option>A-</option>
+						<option>B+</option>
+						<option>B-</option>
+						<option>AB+</option>
+						<option>AB-</option>
+						<option>O+</option>
+						<option>O-</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="telfono" class="labels">Telefono:</label>
+					<input type="text" id="telfono" autocomplete="off" />
+				</div>
+				<div class="form-group">
+					<label for="correo" class="labels">Correo:</label>
+					<input type="email" id="correo" autocomplete="off" />
+				</div>
+				<div>
+					<label  class="labels">Tiene experiencia en primeros auxilios:</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Si</label>
+					<label class="radio-inline"><input type="radio" name="optradio">No</label>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+				
 			</form>
-		</div>
-	</header>
-	<section>
-		<div id="formulario">
-			<form  name="pedidos" id="pedido" method="get" autocomplete="			off">
-   				<label for="nombre" class="labels">Nombres:</label>
-   				<input type="text" id="nombre" autocomplete="off" /><br><br>
-   				<label for="apellido" class="labels">Apellidos:</label>
-   				<input type="text" id="apellido" autocomplete="off" /><br><br>
-				<label class="labels" >Sexo:</label>
-   				<input type="radio" name="sexo" id="masculino" value="Masculino">
-				<label for="varon">Masculino </label>
-				<input type="radio" name="sexo" id="mujer" value="Mujer">
-				<label for="mujer">Femenino </label><br><br>
-   				<label for="edad" class="labels">Edad:</label>
-   				<input type="text" id="edad" autocomplete="off" /><br><br>
-   				<label for="cedula" class="labels">Cedula:</label>
-   				<input type="text" id="cedula" autocomplete="off" /><br><br>
-   				<label for="sangre" class="labels">Tipo de Sangre:</label>
-   				<input  id="sangre"  list="tipoSangre" name="tipos" />
-   				<datalist id="tipoSangre">
-   					<option value="O+">
-   					<option value="O-">
-   					<option value="A+">
-   					<option value="A-">
-   					<option value="AB+">
-   					<option value="AB+">
-   					<option value="B+">
-   					<option value="B-">
-   				</datalist><br><br>
-   				<label for="telfono" class="labels">Telefono:</label>
-   				<input type="text" id="telfono" autocomplete="off" /><br><br>
-   				<label for="correo" class="labels">Correo:</label>
-   				<input type="email" id="correo" autocomplete="off" /><br><br>
-   				<label class="labels" >Conocimiento de Primeros Auxilios:</label>
-   				<input type="radio" name="experiencia" id="si" value="Si">
-				<label for="si">Si </label>
-				<input type="radio" name="experiencia" id="no" value="No">
-				<label for="no">No </label><br><br>
-				<input type="submit" id="enviar" />
-  			</form>
-  		</div>
-	</section>
-	<footer>
-		<div id="footer">
+			
+			
+		</section>
+		<footer>
+			<div id="footer">
 			<address>Todos los derechos reservados, TAWS.2017</address>
 		</div>
 	</footer>

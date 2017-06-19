@@ -92,10 +92,12 @@ form[name="consultas"] > *{
 
 
 /** FORMULARIO**/
+#quiero-ser-voluntario{
+	background-color: #D5DBF0;
+}
 
-#formulario form{
-	margin-left: 40%;
-	margin-right: auto;
+#quiero-ser-voluntario div {
+	text-align: center;
 }
 
 .labels{
