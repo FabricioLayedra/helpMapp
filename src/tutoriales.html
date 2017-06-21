@@ -8,27 +8,38 @@
 		<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 		<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../dist/css/bootstrap.css" rel="stylesheet">
+			    <link href="../styles/index.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
-			<div id="cabecera">
-				<img src="../img/helpMapp.jpg">
-				<nav>
-					<ul>
-						<li><a href="index.html"> Inicio </a></li>
-						<li><a href="donar.html"> Donar</a></li>
-						<li><a href="statistics.html"> Estadísticas</a> </li>
-						<li><a href="voluntario.html"> Voluntario</a> </li>
-						<li><a href="tutoriales.html"> Tutoriales </a></li>
-						<li><a href="aboutus.html"> Sobre Nosotros</a> </li>
-					</ul>
-				</nav>
-				<form name="buscar" method="GET">
-					<label>Buscar</label>
-					<input type="search" name="busqueda">
-				</form>
-			</div>
-		</header>
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid paleta1">
+            <div class="navbar-header paleta1">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <img class="navbar-brand header-icon" src="../img/helpMapp.jpg">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Buscar">
+              </form>
+              <ul class="nav navbar-nav navbar-right paleta1-text header">
+                <li><a href="index.html" class="paleta1-text"> Inicio </a></li>
+                <li><a href="donar.html" class="paleta1-text"> Donar</a></li>
+                <li><a href="statistics.html" class="paleta1-text"> Estadísticas</a></li>
+                <li><a href="voluntario.html" class="paleta1-text"> Voluntario</a></li>
+                <li><a href="tutoriales.html" class="paleta1-text"> Tutoriales </a></li>
+                <li class="paleta1-text"><a href="aboutus.html"> Sobre Nosotros</a> </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+	</header>
 		
 		<div class="container">
 			<div class="row">
@@ -60,16 +71,21 @@
 				<div class="col-sm-6">
 					
 					<h2>¿Qué donar?</h2>
-					<<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2e97w9hBS6o"></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div id="footer">
-			<address>Todos los derechos reservados, TAWS.2017</address>
-		</div>
-	</footer>
+<footer class="panel-footer fixed-bottom paleta1">
+        <p class="paleta1-text">&copy; TAWS, 2017 &middot; <a href="#">Todos los derechos reservados.</a> &middot;</p>
+      </footer>
+
+          <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/tests/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../dist/js/bootstrap.min.js"></script>
 </body>
 </html>
