@@ -31,4 +31,17 @@
 	max-height: 50px;
 
 
+<<<<<<< HEAD
+=======
+.header{
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+
+.featurette-image {
+	float: left;
+	height: 120pt;
+	width: auto;
+>>>>>>> 9b1aca353444d167964da536ecf59d260428e324
 }
