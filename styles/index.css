@@ -1,25 +1,34 @@
+*{
+	font-family: Cairo;
+}
+
 .fixed-bottom{
-	padding: 0;
-	margin: 0;
+
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 }
 
+.fixed-bottom > p{
+	margin:0;
+	color: #ece242;
+	text-align: right;
+}
 .paleta1{
 	background-color: #212a85;
 }
 
-.paleta1-text{
-	text-decoration-color: red;
+/*text color header and footer*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #ece242;
 }
 
-.header-icon{
-	height: 100px;
-	margin:0;
-	padding: 0;}
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #212a85;
+}
 
-.header{
-	padding-top: auto;
-	padding-bottom: auto;
+.header-icon {
+	max-height: 50px;
+
+
 }
