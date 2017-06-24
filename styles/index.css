@@ -1,47 +1,14 @@
-*{
-	font-family: Cairo;
+.carousel{
+	margin-bottom: 1%;
 }
 
-.fixed-bottom{
-
-	width: 100%;
-	position: fixed;
-	bottom: 0;
+h2.featurette-heading{
+	margin: 15px;
+	text-align: center;
 }
 
-.fixed-bottom > p{
-	margin:0;
-	color: #ece242;
-	text-align: right;
-}
-.paleta1{
-	background-color: #212a85;
+hr.featurette-divider{
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
-/*text color header and footer*/
-.navbar-inverse .navbar-nav>li>a {
-    color: #ece242;
-}
-
-.navbar-inverse .navbar-toggle:hover {
-	background-color: #212a85;
-}
-
-.header-icon {
-	max-height: 50px;
-
-
-<<<<<<< HEAD
-=======
-.header{
-	padding-top: auto;
-	padding-bottom: auto;
-}
-
-
-.featurette-image {
-	float: left;
-	height: 120pt;
-	width: auto;
->>>>>>> 9b1aca353444d167964da536ecf59d260428e324
-}

@@ -1,0 +1,42 @@
+*{
+	font-family: Cairo;
+}
+
+/* Background Color paleta Helpmapp*/
+body {
+	background-color: #D5DBF0;
+}
+.fixed-bottom{
+
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.fixed-bottom > p{
+	margin:0;
+	color: #ece242;
+	text-align: right;
+}
+
+
+
+.paleta1{
+	background-color: #212a85;
+}
+
+/*text color header and footer*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #ece242;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #212a85;
+}
+
+.header-icon {
+	max-height: 50px;
+
+}
+
+
