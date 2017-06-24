@@ -2,6 +2,10 @@
 	font-family: Cairo;
 }
 
+
+.reserver{
+	height: 50px;
+}
 /* Background Color paleta Helpmapp*/
 body {
 	background-color: #D5DBF0;
@@ -11,6 +15,12 @@ body {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+}
+.fixed-top{
+
+	width: 100%;
+	position: fixed;
+	top: 0;
 }
 
 .fixed-bottom > p{
