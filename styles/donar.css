@@ -1,12 +1,10 @@
 h2{
-	opacity : 2;
 	border-top-right-radius: 5%;
 	border-bottom-right-radius: 5%;
 }
 
 .donar-left h2 {
 	padding-bottom: 5%;
-
 }
 
 #map {		
