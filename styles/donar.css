@@ -8,3 +8,9 @@ h2{
 	padding-bottom: 5%;
 
 }
+
+#map {		
+ 	height: 480px;		
+	width: 600px;
+	margin: 5%;
+}		
