@@ -1,7 +1,27 @@
+
 #quiero-ser-voluntario{
 	text-align: center;
+
 }
 
 .form-group{
 	margin-top: 2em;
 }
+
+.carrusel_vol{
+
+	position: relative;
+	top: 30px;
+
+}
+
+.aligner{
+	align-content: center;
+}
+
+#page-wrapper div div  div.carousel-inner div img {
+	width: 100%;
+	height: 831px;
+
+}
+
