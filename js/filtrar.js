@@ -14,7 +14,7 @@ function capturar(){
              $("#province").append(opcion);
         });
     });
-    
+     
 }
 
 function cargarCiudades(){
