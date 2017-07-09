@@ -6,8 +6,14 @@ height:100%;
 
 }
 
+.crappers{
+	padding-bottom: 4em;
+}
 
-
+.featurette-divider{
+	height: 0.1em;
+	background-color: #E7DF85;
+}
 #quiero-ser-voluntario{
 	padding-left: 25%;
 
