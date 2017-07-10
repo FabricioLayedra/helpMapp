@@ -42,7 +42,7 @@
             </div>
             
             <div id="navbar" class="navbar-collapse collapse" >
-              <img src="../img/helpMapp.jpg" class="header-icon">
+              <img src="../img/helpMapp.jpg" class="header-icon" alt="helpMapp-logo">
               <ul class="nav navbar-nav navbar-right ">
 
                 <li><a href="index.html"> Inicio </a></li>
@@ -77,8 +77,8 @@
           <img class="first-slide" src="../img/slide1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Terremoto Ecuador</h1>
-              <p>#16S</p>
+              <h1 class="paletaHM-text-header">Terremoto Ecuador</h1>
+              <p class="paletaHM-text">#16S</p>
             </div>
           </div>
         </div>
@@ -87,8 +87,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>!Encuentra donde donar¡</h1>
-              <p>Consulta en Donar el UPC más cercano para realizar tu donación.</p>
-              <p><a class="btn btn-lg btn-info" href="donar.html" role="button">Ir</a></p>
+              <p>Consulta en Donar el UPC más cercano para realizar tu donación. Presiona  <a href="donar.html" class="text-info"> Donar </a>y convierte en un helpMapper. </p> 
             </div>
           </div>
         </div>
@@ -98,7 +97,7 @@
             <div class="carousel-caption ">
               <h1 >¿Quieres ser voluntario?</h1>
               <p>Ingresa tus datos en el formulario de Voluntario y sé quien levante al Ecuador de nuevo.</p>
-              <p><a class="btn btn-lg btn-info" href="voluntario.html" role="button">Únete</a></p>
+              <p><a class="btn btn-lg btn-info btn-socket" href="voluntario.html" role="button">Únete</a></p>
             </div>
           </div>
         </div>
@@ -114,42 +113,155 @@
     </div><!-- /.carousel -->
  
  
-        <div class="col-md-12">
-          <h2 class="featurette-heading">helpMapp <span class="text-muted">Gestor de donaciones</span></h2>
-          <p class="lead text-center">Una iniciativa gubernamental para la optimización en la entrega de donaciones para los damnificados del Terremoto del 16 de abril</p>
-          <hr class="featurette-divider">
+    <div class="col-md-12 lastOne">
+      <h2 class="featurette-heading">helpMapp <span class="text-muted">Gestor de donaciones</span></h2>
+      <p class="lead text-center">Una iniciativa gubernamental para la optimización en la entrega de donaciones para los damnificados del Terremoto del 16 de abril</p>
+
+      <hr class="featurette-divider"> <!-- TIMELINE -->
+        <div class="container">
+          <div class="page-header">
+          <h1 class="text-center">helpMappers: al momento</h1>
         </div>
+        <div id="timeline">
+        <div class="row timeline-movement timeline-movement-top">
+          <div class="timeline-badge timeline-future-movement">
+              <a >
+                  <span class="glyphicon glyphicon-plus"></span>
+              </a>
+          </div>
+          <div class="timeline-badge timeline-filter-movement">
+              <a >
+                  <span class="glyphicon glyphicon-time"></span>
+              </a>
+          </div>
+
+        </div>
+        <div class="row timeline-movement">
+
+            <div class="timeline-badge">
+                <span class="timeline-balloon-date-day">20</span>
+                <span class="timeline-balloon-date-month">ABRIL</span>
+            </div>
 
 
+            <div class="col-sm-6  timeline-item">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div class="timeline-panel credits">
+                            <ul class="timeline-panel-ul">
+                                <li><span class="importo"> 419 helpMappers</span></li>
+                                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 18h58</small></p> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+      <!--due -->
+
+      <div class="row timeline-movement">
+
+
+          <div class="timeline-badge">
+              <span class="timeline-balloon-date-day">19</span>
+              <span class="timeline-balloon-date-month">ABRIL</span>
+          </div>
+
+          <div class="col-sm-offset-6 col-sm-6  timeline-item">
+              <div class="row">
+                  <div class="col-sm-offset-1 col-sm-11">
+                      <div class="timeline-panel debits">
+                          <ul class="timeline-panel-ul">
+                              <li><span class="importo"> 512 helpMappers</span></li>
+                              <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 18h58</small></p> </li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+
+
+
+      </div>
+      <div class="row timeline-movement">
+
+
+          <div class="timeline-badge">
+              <span class="timeline-balloon-date-day">18</span>
+              <span class="timeline-balloon-date-month">ABRIL</span>
+          </div>
+
+          <div class="col-sm-6  timeline-item">
+              <div class="row">
+                  <div class="col-sm-11">
+                      <div class="timeline-panel credits">
+                          <ul class="timeline-panel-ul">
+                              <li><span class="importo"> 256 helpMappers</span></li>
+                              <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 18h58</small></p> </li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+      </div>
+
+      </div>
+      <div class="col-lg-12 text-center socket-container">
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-8">
+      <h2>¿Deseas unirte al enorme grupo de donantes que reconstruyen Ecuador?</h2>
+      <h3>Clickea &darr; aquí </h3>
+        <button   type="submit" class="btn btn-default sender btn-socket"> Be a helpMapper!</button>
+
+      </div>
+      <div class="col-lg-2">
+      
+      </div>
+
+      </div>
+      <hr class="featurette-divider"> 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+    <h1 class="text-center text-info">Organismos de Ayuda</h1>
+      <div class="container marketing ">
 
-    <div class="container marketing ">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-circle" src="../img/minint.jpg" alt="ministeriointerior" width="140" height="140">
+            <h2>Ministerio del Interior</h2>
+            <p>Ministerio a cargo del control del orden público en la zona de desastre.</p>
+            <p><a class="btn btn-info btn-socket" href="https://www.ministeriointerior.gob.ec/" role="button">Ir</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="../img/sngr.jpg" alt="sngr" width="140" height="140">
+            <h2>Secretaría Nacional de Gestión de Riesgos</h2>
+            <p>Ente coordinador y ejecutador de entrega de donaciones en situaciones de emergencia.</p>
+            <p><a class="btn btn-info btn-socket" href="https://www.gestionderiesgos.gob.ec/" role="button">Ir</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="../img/policia.jpg" alt="policia" width="140" height="140">
+            <h2>Policía Nacional del Ecuador</h2>
+            <p>Colaborador in-situ del Ministerio del Interior.</p>
+            <p><a class="btn btn-info btn-socket" href="https://www.policiaecuador.gob.ec" role="button">Ir </a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="../img/minint.jpg" alt="ministeriointerior" width="140" height="140">
-          <h2>Ministerio del Interior</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-info" href="https://www.ministeriointerior.gob.ec/" role="button">Ir</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="../img/sngr.jpg" alt="sngr" width="140" height="140">
-          <h2>Secretaría Nacional de Gestión de Riesgos</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-info" href="https://www.gestionderiesgos.gob.ec/" role="button">Ir</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="../img/policia.jpg" alt="policia" width="140" height="140">
-          <h2>Policía Nacional del Ecuador</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-info" href="https://www.policiaecuador.gob.ec" role="button">Ir </a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-</div><!-- /.container -->
+      </div><!-- /.container -->
 
+
+</div>
       <!-- FOOTER -->
       <footer class="panel-footer fixed-bottom paleta1">
         <p>TAWS 2017 &middot;  Todos los derechos reservados  &middot;</p>
