@@ -1,7 +1,5 @@
 function capturar(){
-    console.log("fddf");
     $.getJSON("/helpMapp/data/provincias.json", function(data) {
-    	alert("gjndfnfd");
     	let opcion = $('<option></option>');
         opcion.attr("value", "")
         opcion.text("Provincia");
@@ -43,8 +41,9 @@ function cargarCiudades(){
 }
 
 
+
+
 $(window).load(function() {
  	capturar();
  	cargarCiudades();
-
 });
